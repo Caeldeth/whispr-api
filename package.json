@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  },
+  "name": "whispr-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caeldeth/whispr-api.git"
+  },
+  "keywords": [],
+  "author": "Caeldeth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Caeldeth/whispr-api/issues"
+  },
+  "homepage": "https://github.com/Caeldeth/whispr-api#readme",
+  "description": ""
+}
