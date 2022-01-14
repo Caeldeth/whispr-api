@@ -13,7 +13,7 @@
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Questions](#questions)
-  - [Screenshots](#screenshots)
+  - [Walkthrough](#walkthrough)
 
 ## Description
 Whispr api is backend for a social api network.  Allows for the users to post their thoughts and get reactions to those thoughts.
@@ -35,6 +35,5 @@ If you have any questions on this project:
 
 Visit my [profile](https://github.com/Caeldeth) to see more great projects!
   
-## Screenshots
-![Main page](./images/whispr-api-home.png)
-![Dashboard Page](./images/whispr-api-dashboard.png)
+## Walkthrough
+[Walkthrough Video.](https://watch.screencastify.com/v/dmxgWSd2W8sJ1Tfq6zcY))
