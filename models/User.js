@@ -36,12 +36,12 @@ const UserSchema = new Schema(
 );
 
 // virtual to count how many friends a user has - use same virtual as pizza hunt
-UserSchema.virtual("friendCount").get(function () {
+UserSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 
 // create the user model using userSchema
-const User = model("User", UserSchema);
+const User = model('User', UserSchema);
 
 // export the model
 module.exports = User;
