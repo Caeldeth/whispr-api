@@ -14,8 +14,18 @@ const UserSchema = new Schema(
             unique: true,
             match: [/.+@.+\..+/],
         },
-        thoughts: [], //need to create thoughts model
-        friends: [], //need to create friends model
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: "Thoughts",
+            },
+        ],
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: "User",
+            },
+        ],
     },
     {
         toJSON: {
@@ -26,12 +36,12 @@ const UserSchema = new Schema(
 );
 
 // virtual to count how many friends a user has - use same virtual as pizza hunt
-UserSchema.virtual('friendCount').get(function() {
-    return this.friends.length
-})
+UserSchema.virtual("friendCount").get(function () {
+    return this.friends.length;
+});
 
 // create the user model using userSchema
-const User = model('User', UserSchema)
+const User = model("User", UserSchema);
 
 // export the model
 module.exports = User;
