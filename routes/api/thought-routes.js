@@ -6,13 +6,12 @@ const { getAllThoughts, getThoughtById, createThought, updateThought, deleteThou
 router.route("/").get(getAllThoughts).post(createThought);
 
 // set up get one thought routes
-router
-    .route(":/thoughtId")
-    .get(getThoughtById)
-    .put(updateThought)
-    .delete(deleteThought);
+router.route("/:thoughtId").get(getThoughtById).put(updateThought).delete(deleteThought);
 
 // set up reaction routes
-router.route("/:thoughtId/reactions").post(addReaction).delete(deleteReaction);
+router.route("/:thoughtId/reactions").post(addReaction)
+
+// delete route separated because easier
+router.route("/:thoughtId/reactions/:reactionId").delete(deleteReaction);
 
 module.exports = router;

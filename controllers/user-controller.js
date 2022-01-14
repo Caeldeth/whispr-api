@@ -1,4 +1,4 @@
-const { User, Thought } = require("../models");
+const { User, Thoughts } = require("../models");
 
 const userController = {
     // get all users
@@ -70,7 +70,7 @@ const userController = {
                 { $pull: { friends: params.userId } }
             )
             .then(() => {
-                Thought.deleteMany({ username: dbUserData.username })
+                Thoughts.deleteMany({ username: dbUserData.username })
                 .then(() => {
                     res.json({ message: "User deleted!"});
                 })
