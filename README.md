@@ -36,4 +36,4 @@ If you have any questions on this project:
 Visit my [profile](https://github.com/Caeldeth) to see more great projects!
   
 ## Walkthrough
-[Walkthrough Video.](https://watch.screencastify.com/v/dmxgWSd2W8sJ1Tfq6zcY))
+[Walkthrough Video.](https://watch.screencastify.com/v/dmxgWSd2W8sJ1Tfq6zcY)
